@@ -357,6 +357,327 @@ require ABSPATH . WPINC . '/style-engine/class-wp-style-engine-processor.php';
 
 $GLOBALS['wp_embed'] = new WP_Embed();
 
+// Set the database table prefix and the format specifiers for database table columns.
+$GLOBALS['table_prefix'] = $table_prefix;
+wp_set_wpdb_vars();
+
+// Start the WordPress object cache, or an external object cache if the drop-in is present.
+wp_start_object_cache();
+
+// Attach the default filters.
+require ABSPATH . WPINC . '/default-filters.php';
+
+// Initialize multisite if enabled.
+if ( is_multisite() ) {
+	require ABSPATH . WPINC . '/class-wp-site-query.php';
+	require ABSPATH . WPINC . '/class-wp-network-query.php';
+	require ABSPATH . WPINC . '/ms-blogs.php';
+	require ABSPATH . WPINC . '/ms-settings.php';
+} elseif ( ! defined( 'MULTISITE' ) ) {
+	define( 'MULTISITE', false );
+}
+
+register_shutdown_function( 'shutdown_action_hook' );
+
+// Stop most of WordPress from being loaded if SHORTINIT is enabled.
+if ( SHORTINIT ) {
+	return false;
+}
+
+// Load the L10n library.
+require_once ABSPATH . WPINC . '/l10n.php';
+require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+require_once ABSPATH . WPINC . '/class-wp-locale.php';
+require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
+// Set the database table prefix and the format specifiers for database table columns.
+$GLOBALS['table_prefix'] = $table_prefix;
+wp_set_wpdb_vars();
+
+// Start the WordPress object cache, or an external object cache if the drop-in is present.
+wp_start_object_cache();
+
+// Attach the default filters.
+require ABSPATH . WPINC . '/default-filters.php';
+
+// Initialize multisite if enabled.
+if ( is_multisite() ) {
+	require ABSPATH . WPINC . '/class-wp-site-query.php';
+	require ABSPATH . WPINC . '/class-wp-network-query.php';
+	require ABSPATH . WPINC . '/ms-blogs.php';
+	require ABSPATH . WPINC . '/ms-settings.php';
+} elseif ( ! defined( 'MULTISITE' ) ) {
+	define( 'MULTISITE', false );
+}
+
+register_shutdown_function( 'shutdown_action_hook' );
+
+// Stop most of WordPress from being loaded if SHORTINIT is enabled.
+if ( SHORTINIT ) {
+	return false;
+}
+
+// Load the L10n library.
+require_once ABSPATH . WPINC . '/l10n.php';
+require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+require_once ABSPATH . WPINC . '/class-wp-locale.php';
+require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
+// Set the database table prefix and the format specifiers for database table columns.
+$GLOBALS['table_prefix'] = $table_prefix;
+wp_set_wpdb_vars();
+
+// Start the WordPress object cache, or an external object cache if the drop-in is present.
+wp_start_object_cache();
+
+// Attach the default filters.
+require ABSPATH . WPINC . '/default-filters.php';
+
+// Initialize multisite if enabled.
+if ( is_multisite() ) {
+	require ABSPATH . WPINC . '/class-wp-site-query.php';
+	require ABSPATH . WPINC . '/class-wp-network-query.php';
+	require ABSPATH . WPINC . '/ms-blogs.php';
+	require ABSPATH . WPINC . '/ms-settings.php';
+} elseif ( ! defined( 'MULTISITE' ) ) {
+	define( 'MULTISITE', false );
+}
+
+register_shutdown_function( 'shutdown_action_hook' );
+
+// Stop most of WordPress from being loaded if SHORTINIT is enabled.
+if ( SHORTINIT ) {
+	return false;
+}
+
+// Load the L10n library.
+require_once ABSPATH . WPINC . '/l10n.php';
+require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+require_once ABSPATH . WPINC . '/class-wp-locale.php';
+require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
+// Set the database table prefix and the format specifiers for database table columns.
+$GLOBALS['table_prefix'] = $table_prefix;
+wp_set_wpdb_vars();
+
+// Start the WordPress object cache, or an external object cache if the drop-in is present.
+wp_start_object_cache();
+
+// Attach the default filters.
+require ABSPATH . WPINC . '/default-filters.php';
+
+// Initialize multisite if enabled.
+if ( is_multisite() ) {
+	require ABSPATH . WPINC . '/class-wp-site-query.php';
+	require ABSPATH . WPINC . '/class-wp-network-query.php';
+	require ABSPATH . WPINC . '/ms-blogs.php';
+	require ABSPATH . WPINC . '/ms-settings.php';
+} elseif ( ! defined( 'MULTISITE' ) ) {
+	define( 'MULTISITE', false );
+}
+
+register_shutdown_function( 'shutdown_action_hook' );
+
+// Stop most of WordPress from being loaded if SHORTINIT is enabled.
+if ( SHORTINIT ) {
+	return false;
+}
+
+// Load the L10n library.
+require_once ABSPATH . WPINC . '/l10n.php';
+require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+require_once ABSPATH . WPINC . '/class-wp-locale.php';
+require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
+// Set the database table prefix and the format specifiers for database table columns.
+$GLOBALS['table_prefix'] = $table_prefix;
+wp_set_wpdb_vars();
+
+// Start the WordPress object cache, or an external object cache if the drop-in is present.
+wp_start_object_cache();
+
+// Attach the default filters.
+require ABSPATH . WPINC . '/default-filters.php';
+
+// Initialize multisite if enabled.
+if ( is_multisite() ) {
+	require ABSPATH . WPINC . '/class-wp-site-query.php';
+	require ABSPATH . WPINC . '/class-wp-network-query.php';
+	require ABSPATH . WPINC . '/ms-blogs.php';
+	require ABSPATH . WPINC . '/ms-settings.php';
+} elseif ( ! defined( 'MULTISITE' ) ) {
+	define( 'MULTISITE', false );
+}
+
+register_shutdown_function( 'shutdown_action_hook' );
+
+// Stop most of WordPress from being loaded if SHORTINIT is enabled.
+if ( SHORTINIT ) {
+	return false;
+}
+
+// Load the L10n library.
+require_once ABSPATH . WPINC . '/l10n.php';
+require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+require_once ABSPATH . WPINC . '/class-wp-locale.php';
+require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
+// Set the database table prefix and the format specifiers for database table columns.
+$GLOBALS['table_prefix'] = $table_prefix;
+wp_set_wpdb_vars();
+
+// Start the WordPress object cache, or an external object cache if the drop-in is present.
+wp_start_object_cache();
+
+// Attach the default filters.
+require ABSPATH . WPINC . '/default-filters.php';
+
+// Initialize multisite if enabled.
+if ( is_multisite() ) {
+	require ABSPATH . WPINC . '/class-wp-site-query.php';
+	require ABSPATH . WPINC . '/class-wp-network-query.php';
+	require ABSPATH . WPINC . '/ms-blogs.php';
+	require ABSPATH . WPINC . '/ms-settings.php';
+} elseif ( ! defined( 'MULTISITE' ) ) {
+	define( 'MULTISITE', false );
+}
+
+register_shutdown_function( 'shutdown_action_hook' );
+
+// Stop most of WordPress from being loaded if SHORTINIT is enabled.
+if ( SHORTINIT ) {
+	return false;
+}
+
+// Load the L10n library.
+require_once ABSPATH . WPINC . '/l10n.php';
+require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+require_once ABSPATH . WPINC . '/class-wp-locale.php';
+require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
+// Set the database table prefix and the format specifiers for database table columns.
+$GLOBALS['table_prefix'] = $table_prefix;
+wp_set_wpdb_vars();
+
+// Start the WordPress object cache, or an external object cache if the drop-in is present.
+wp_start_object_cache();
+
+// Attach the default filters.
+require ABSPATH . WPINC . '/default-filters.php';
+
+// Initialize multisite if enabled.
+if ( is_multisite() ) {
+	require ABSPATH . WPINC . '/class-wp-site-query.php';
+	require ABSPATH . WPINC . '/class-wp-network-query.php';
+	require ABSPATH . WPINC . '/ms-blogs.php';
+	require ABSPATH . WPINC . '/ms-settings.php';
+} elseif ( ! defined( 'MULTISITE' ) ) {
+	define( 'MULTISITE', false );
+}
+
+register_shutdown_function( 'shutdown_action_hook' );
+
+// Stop most of WordPress from being loaded if SHORTINIT is enabled.
+if ( SHORTINIT ) {
+	return false;
+}
+
+// Load the L10n library.
+require_once ABSPATH . WPINC . '/l10n.php';
+require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+require_once ABSPATH . WPINC . '/class-wp-locale.php';
+require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
+// Set the database table prefix and the format specifiers for database table columns.
+$GLOBALS['table_prefix'] = $table_prefix;
+wp_set_wpdb_vars();
+
+// Start the WordPress object cache, or an external object cache if the drop-in is present.
+wp_start_object_cache();
+
+// Attach the default filters.
+require ABSPATH . WPINC . '/default-filters.php';
+
+// Initialize multisite if enabled.
+if ( is_multisite() ) {
+	require ABSPATH . WPINC . '/class-wp-site-query.php';
+	require ABSPATH . WPINC . '/class-wp-network-query.php';
+	require ABSPATH . WPINC . '/ms-blogs.php';
+	require ABSPATH . WPINC . '/ms-settings.php';
+} elseif ( ! defined( 'MULTISITE' ) ) {
+	define( 'MULTISITE', false );
+}
+
+register_shutdown_function( 'shutdown_action_hook' );
+
+// Stop most of WordPress from being loaded if SHORTINIT is enabled.
+if ( SHORTINIT ) {
+	return false;
+}
+
+// Load the L10n library.
+require_once ABSPATH . WPINC . '/l10n.php';
+require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+require_once ABSPATH . WPINC . '/class-wp-locale.php';
+require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
+// Set the database table prefix and the format specifiers for database table columns.
+$GLOBALS['table_prefix'] = $table_prefix;
+wp_set_wpdb_vars();
+
+// Start the WordPress object cache, or an external object cache if the drop-in is present.
+wp_start_object_cache();
+
+// Attach the default filters.
+require ABSPATH . WPINC . '/default-filters.php';
+
+// Initialize multisite if enabled.
+if ( is_multisite() ) {
+	require ABSPATH . WPINC . '/class-wp-site-query.php';
+	require ABSPATH . WPINC . '/class-wp-network-query.php';
+	require ABSPATH . WPINC . '/ms-blogs.php';
+	require ABSPATH . WPINC . '/ms-settings.php';
+} elseif ( ! defined( 'MULTISITE' ) ) {
+	define( 'MULTISITE', false );
+}
+
+register_shutdown_function( 'shutdown_action_hook' );
+
+// Stop most of WordPress from being loaded if SHORTINIT is enabled.
+if ( SHORTINIT ) {
+	return false;
+}
+
+// Load the L10n library.
+require_once ABSPATH . WPINC . '/l10n.php';
+require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+require_once ABSPATH . WPINC . '/class-wp-locale.php';
+require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
+// Set the database table prefix and the format specifiers for database table columns.
+$GLOBALS['table_prefix'] = $table_prefix;
+wp_set_wpdb_vars();
+
+// Start the WordPress object cache, or an external object cache if the drop-in is present.
+wp_start_object_cache();
+
+// Attach the default filters.
+require ABSPATH . WPINC . '/default-filters.php';
+
+// Initialize multisite if enabled.
+if ( is_multisite() ) {
+	require ABSPATH . WPINC . '/class-wp-site-query.php';
+	require ABSPATH . WPINC . '/class-wp-network-query.php';
+	require ABSPATH . WPINC . '/ms-blogs.php';
+	require ABSPATH . WPINC . '/ms-settings.php';
+} elseif ( ! defined( 'MULTISITE' ) ) {
+	define( 'MULTISITE', false );
+}
+
+register_shutdown_function( 'shutdown_action_hook' );
+
+// Stop most of WordPress from being loaded if SHORTINIT is enabled.
+if ( SHORTINIT ) {
+	return false;
+}
+
+// Load the L10n library.
+require_once ABSPATH . WPINC . '/l10n.php';
+require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+require_once ABSPATH . WPINC . '/class-wp-locale.php';
+require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
+
 /**
  * WordPress Textdomain Registry object.
  *
